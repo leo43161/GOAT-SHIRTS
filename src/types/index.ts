@@ -6,7 +6,7 @@ export interface Product {
   variant: 'TITULAR' | 'SUPLENTE';
   version?: 'VERSIÓN JUGADOR' | 'VERSIÓN NACIONAL';
   details?: string[];
-  image: string; // Placeholder for now
+  images?: string[]; // Placeholder for now
 }
 
 export interface YearData {

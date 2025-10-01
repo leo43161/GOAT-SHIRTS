@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'; // Asegúrate de tener framer-motion ins
 
 const Hero = () => {
     return (
-        <section className="relative w-full h-svh flex flex-col items-center justify-center text-white">
+        <section className="relative w-full h-svh flex flex-col items-center justify-center text-white z-10">
             {/* Imagen de fondo con overlay degradado */}
             <Image
                 src="/img/img25.jpg" // Asegúrate de que la ruta sea correcta y la imagen esté en /public/img

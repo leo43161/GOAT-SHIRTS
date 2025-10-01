@@ -11,8 +11,8 @@ export const yearsData: YearData[] = [
       matchInfo: 'Cuartos de Final: Argentina 2 - Inglaterra 1',
     },
     products: [
-      { id: 1, name: 'SELECCION ARGENTINA 1986', year: 1986, variant: 'TITULAR', image: 'placeholder.svg' },
-      { id: 2, name: 'SELECCION ARGENTINA 1986', year: 1986, variant: 'SUPLENTE', image: 'placeholder.svg' },
+      { id: 1, name: 'SELECCION ARGENTINA 1986', year: 1986, variant: 'TITULAR', images: ['arg-86/t/1.png', 'arg-86/t/2.png'] },
+      { id: 2, name: 'SELECCION ARGENTINA 1986', year: 1986, variant: 'SUPLENTE', images: ['arg-86/s/3.png', 'arg-86/s/4.png'] },
     ],
   },
   {
@@ -24,8 +24,8 @@ export const yearsData: YearData[] = [
       matchInfo: 'Fase de Grupos: Argentina 4 - Grecia 0',
     },
     products: [
-      { id: 3, name: 'SELECCION ARGENTINA 1994', year: 1994, variant: 'TITULAR', image: 'placeholder.svg' },
-      { id: 4, name: 'SELECCION ARGENTINA 1994', year: 1994, variant: 'SUPLENTE', image: 'placeholder.svg' },
+      { id: 3, name: 'SELECCION ARGENTINA 1994', year: 1994, variant: 'TITULAR', images: ['arg-94/t/9.png', 'arg-94/t/10.png'] },
+      { id: 4, name: 'SELECCION ARGENTINA 1994', year: 1994, variant: 'SUPLENTE', images: ['arg-94/s/11.png', 'arg-94/s/12.png'] },
     ],
   },
   {
@@ -37,8 +37,8 @@ export const yearsData: YearData[] = [
       matchInfo: 'Fase de Grupos: Argentina 6 - Serbia y Montenegro 0',
     },
     products: [
-      { id: 5, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'TITULAR', image: 'placeholder.svg' },
-      { id: 6, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'SUPLENTE', image: 'placeholder.svg' },
+      { id: 5, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'TITULAR', images: ['arg-06/t/13.png', 'arg-06/t/14.png'] },
+      { id: 6, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'SUPLENTE', images: ['arg-06/s/11.png', 'arg-06/s/12.png'] },
     ],
   },
   {
@@ -50,113 +50,203 @@ export const yearsData: YearData[] = [
       matchInfo: 'FINAL: Argentina 3 (4) - Francia 3 (2)',
     },
     products: [
-      { id: 7, name: 'SELECCION ARGENTINA 2022', year: 2022, variant: 'TITULAR', version: 'VERSIÓN JUGADOR', image: 'placeholder.svg' },
-      { id: 8, name: 'SELECCION ARGENTINA 2022', year: 2022, variant: 'TITULAR', version: 'VERSIÓN NACIONAL', image: 'placeholder.svg' },
-      { id: 9, name: 'SELECCION ARGENTINA 2022', year: 2022, variant: 'SUPLENTE', version: 'VERSIÓN JUGADOR', image: 'placeholder.svg' },
-      { id: 10, name: 'SELECCION ARGENTINA 2022', year: 2022, variant: 'SUPLENTE', version: 'VERSIÓN NACIONAL', image: 'placeholder.svg' },
+      { id: 7, name: 'SELECCION ARGENTINA 2022', year: 2022, variant: 'TITULAR', version: 'VERSIÓN JUGADOR', images: ['arg-22/t/15.png', 'arg-22/t/16.png'] },
+      { id: 8, name: 'SELECCION ARGENTINA 2022', year: 2022, variant: 'SUPLENTE', version: 'VERSIÓN JUGADOR', images: ['arg-22/s/17.png', 'arg-22/s/18.png'] },
     ],
   },
-   {
+  {
     year: 2024,
     player: 'Lionel Messi',
     cover: {
     img: "25.png",
       title: 'Copa América 2024',
-      matchInfo: 'Semifinal: Argentina 2 - Canadá 0',
+      matchInfo: 'Final: Argentina 1 - Colombia 0',
     },
     products: [
-      { id: 11, name: 'SELECCION ARGENTINA 2024', year: 2024, variant: 'TITULAR', version: 'VERSIÓN JUGADOR', details: ['Parche Campeón del Mundo', 'Parche Copa América'], image: 'placeholder.svg' },
-      { id: 12, name: 'SELECCION ARGENTINA 2024', year: 2024, variant: 'TITULAR', version: 'VERSIÓN NACIONAL', details: ['Parche Campeón del Mundo', 'Parche Copa América'], image: 'placeholder.svg' },
-      { id: 13, name: 'SELECCION ARGENTINA 2024', year: 2024, variant: 'SUPLENTE', version: 'VERSIÓN JUGADOR', details: ['Parche Campeón del Mundo', 'Parche Copa América'], image: 'placeholder.svg' },
-      { id: 14, name: 'SELECCION ARGENTINA 2024', year: 2024, variant: 'SUPLENTE', version: 'VERSIÓN NACIONAL', details: ['Parche Campeón del Mundo', 'Parche Copa América'], image: 'placeholder.svg' },
-    ],
-  },
-    {
-    year: 2025,
-    player: 'Alexis Mac Allister',
-    cover: {
-    img: "30.png",
-      title: 'Edición Especial 2025',
-      matchInfo: 'Eliminatorias USA 2026: Argentina 4 - Brasil 1',
-    },
-    products: [
-      { id: 15, name: 'EDICIÓN ESPECIAL 50 AÑOS', year: 2025, variant: 'TITULAR', version: 'VERSIÓN JUGADOR', details: ['Parches y números personalizados'], image: 'placeholder.svg' },
-      { id: 16, name: 'EDICIÓN ESPECIAL 50 AÑOS', year: 2025, variant: 'TITULAR', version: 'VERSIÓN NACIONAL', details: ['Parches y números personalizados'], image: 'placeholder.svg' },
+      { id: 9, name: 'SELECCION ARGENTINA 2024', year: 2024, variant: 'TITULAR', version: 'VERSIÓN JUGADOR', details: ['Parche Campeón del Mundo', 'Parche Copa América'], images: ['arg-24/t/19.png', 'arg-24/t/20.png'] },
+      { id: 10, name: 'SELECCION ARGENTINA 2024', year: 2024, variant: 'SUPLENTE', version: 'VERSIÓN JUGADOR', details: ['Parche Campeón del Mundo', 'Parche Copa América'], images: ['arg-24/s/21.png', 'arg-24/s/22.png'] },
     ],
   },
 ];
 
 export const additionalProducts: Product[] = [
+  // Argentina 1990 (Italia 90)
   {
     id: 101,
-    name: 'CAMISETA ENTRENAMIENTO',
-    year: 2024,
+    name: 'SELECCION ARGENTINA 1990',
+    year: 1990,
     variant: 'TITULAR',
-    version: 'VERSIÓN JUGADOR',
-    details: ['Tecnología Dri-FIT', 'Logo termosellado'],
-    image: 'placeholder.svg'
+    details: ['Mundial Italia 1990', 'Subcampeón'],
+    images: ['arg-90/t/7.png', 'arg-90/t/8.png']
   },
   {
     id: 102,
-    name: 'CAMISETA PRESENTACIÓN',
-    year: 2024,
-    variant: 'TITULAR',
-    version: 'VERSIÓN NACIONAL',
-    details: ['Diseño oficial', 'Escudo bordado'],
-    image: 'placeholder.svg'
+    name: 'SELECCION ARGENTINA 1990',
+    year: 1990,
+    variant: 'SUPLENTE',
+    details: ['Mundial Italia 1990', 'Subcampeón'],
+    images: ['arg-90/s/5.png', 'arg-90/s/6.png']
   },
+  // Argentina Edición Especial
   {
     id: 103,
-    name: 'CAMPERA OFICIAL',
-    year: 2024,
+    name: 'ARGENTINA EDICIÓN ESPECIAL',
+    year: 2025,
     variant: 'TITULAR',
-    version: 'VERSIÓN NACIONAL',
-    details: ['Material impermeable', 'Cierre completo'],
-    image: 'placeholder.svg'
+    details: ['Diseño conmemorativo', 'Edición limitada'],
+    images: ['arg-esp/23.png', 'arg-esp/24.png']
   },
+  // Brasil 1988
   {
     id: 104,
-    name: 'BUZO ENTRENAMIENTO',
-    year: 2024,
+    name: 'SELECCION BRASIL 1988',
+    year: 1988,
     variant: 'TITULAR',
-    version: 'VERSIÓN JUGADOR',
-    details: ['Capucha ajustable', 'Bolsillos laterales'],
-    image: 'placeholder.svg'
+    details: ['Retro clásico', 'Diseño icónico'],
+    images: ['br-88/t/25.png', 'br-88/t/26.png']
   },
   {
     id: 105,
-    name: 'SHORT OFICIAL',
-    year: 2024,
-    variant: 'TITULAR',
-    version: 'VERSIÓN JUGADOR',
-    details: ['Tela transpirable', 'Cordón ajustable'],
-    image: 'placeholder.svg'
+    name: 'SELECCION BRASIL 1988',
+    year: 1988,
+    variant: 'SUPLENTE',
+    details: ['Retro clásico', 'Diseño icónico'],
+    images: ['br-88/s/27.png', 'br-88/s/28.png']
   },
+  // Brasil 2002
   {
     id: 106,
-    name: 'MEDIAS OFICIALES',
-    year: 2024,
+    name: 'SELECCION BRASIL 2002',
+    year: 2002,
     variant: 'TITULAR',
-    version: 'VERSIÓN NACIONAL',
-    details: ['Material técnico', 'Ajuste ergonómico'],
-    image: 'placeholder.svg'
+    details: ['Mundial Corea-Japón 2002', 'Pentacampeón'],
+    images: ['br-02/t/29.png', 'br-02/t/30.png']
   },
   {
     id: 107,
-    name: 'REMERA CASUAL',
-    year: 2024,
-    variant: 'TITULAR',
-    version: 'VERSIÓN NACIONAL',
-    details: ['100% Algodón', 'Diseño exclusivo'],
-    image: 'placeholder.svg'
+    name: 'SELECCION BRASIL 2002',
+    year: 2002,
+    variant: 'SUPLENTE',
+    details: ['Mundial Corea-Japón 2002', 'Pentacampeón'],
+    images: ['br-02/s/31.png', 'br-02/s/32.png']
   },
+  // Brasil 2006
   {
     id: 108,
-    name: 'GORRA OFICIAL',
+    name: 'SELECCION BRASIL 2006',
+    year: 2006,
+    variant: 'TITULAR',
+    details: ['Mundial Alemania 2006', 'Diseño clásico'],
+    images: ['br-06/t/33.png', 'br-06/t/34.png']
+  },
+  {
+    id: 109,
+    name: 'SELECCION BRASIL 2006',
+    year: 2006,
+    variant: 'SUPLENTE',
+    details: ['Mundial Alemania 2006', 'Diseño clásico'],
+    images: ['br-06/s/35.png', 'br-06/s/36.png']
+  },
+  // Brasil 2025
+  {
+    id: 110,
+    name: 'SELECCION BRASIL 2025',
+    year: 2025,
+    variant: 'TITULAR',
+    details: ['Última colección', 'Diseño moderno'],
+    images: ['br-25/t/37.png', 'br-25/t/38.png']
+  },
+  {
+    id: 111,
+    name: 'SELECCION BRASIL 2025',
+    year: 2025,
+    variant: 'SUPLENTE',
+    details: ['Última colección', 'Diseño moderno'],
+    images: ['br-25/s/39.png', 'br-25/s/40.png']
+  },
+  // Francia 1998
+  {
+    id: 112,
+    name: 'SELECCION FRANCIA 1998',
+    year: 1998,
+    variant: 'TITULAR',
+    details: ['Mundial Francia 1998', 'Campeón del Mundo'],
+    images: ['fr-98/t/41.png', 'fr-98/t/42.png']
+  },
+  {
+    id: 113,
+    name: 'SELECCION FRANCIA 1998',
+    year: 1998,
+    variant: 'SUPLENTE',
+    details: ['Mundial Francia 1998', 'Campeón del Mundo'],
+    images: ['fr-98/s/43.png', 'fr-98/s/44.png']
+  },
+  // Francia 2006
+  {
+    id: 114,
+    name: 'SELECCION FRANCIA 2006',
+    year: 2006,
+    variant: 'TITULAR',
+    details: ['Mundial Alemania 2006', 'Subcampeón'],
+    images: ['fr-06/t/45.png', 'fr-06/t/46.png']
+  },
+  {
+    id: 115,
+    name: 'SELECCION FRANCIA 2006',
+    year: 2006,
+    variant: 'SUPLENTE',
+    details: ['Mundial Alemania 2006', 'Subcampeón'],
+    images: ['fr-06/s/47.png', 'fr-06/s/48.png']
+  },
+  // Francia Actual
+  {
+    id: 116,
+    name: 'SELECCION FRANCIA ACTUAL',
     year: 2024,
     variant: 'TITULAR',
-    version: 'VERSIÓN NACIONAL',
-    details: ['Ajuste regulable', 'Escudo bordado'],
-    image: 'placeholder.svg'
-  }
+    details: ['Última colección', 'Diseño oficial'],
+    images: ['fr-act/t/51.png', 'fr-act/t/52.png']
+  },
+  {
+    id: 117,
+    name: 'SELECCION FRANCIA ACTUAL',
+    year: 2024,
+    variant: 'SUPLENTE',
+    details: ['Última colección', 'Diseño oficial'],
+    images: ['fr-act/s/53.png', 'fr-act/s/54.png']
+  },
+  // Portugal 2006
+  {
+    id: 118,
+    name: 'SELECCION PORTUGAL 2006',
+    year: 2006,
+    variant: 'TITULAR',
+    details: ['Mundial Alemania 2006', 'Diseño retro'],
+    images: ['port-06/t/55.png', 'port-06/t/56.png']
+  },
+  {
+    id: 119,
+    name: 'SELECCION PORTUGAL 2006',
+    year: 2006,
+    variant: 'SUPLENTE',
+    details: ['Mundial Alemania 2006', 'Diseño retro'],
+    images: ['port-06/s/57.png', 'port-06/s/58.png']
+  },
+  // Portugal Actual
+  {
+    id: 120,
+    name: 'SELECCION PORTUGAL ACTUAL',
+    year: 2024,
+    variant: 'TITULAR',
+    details: ['Última colección', 'Diseño moderno'],
+    images: ['port-act/t/59.png', 'port-act/t/60.png']
+  },
+  {
+    id: 121,
+    name: 'SELECCION PORTUGAL ACTUAL',
+    year: 2024,
+    variant: 'SUPLENTE',
+    details: ['Última colección', 'Diseño moderno'],
+    images: ['port-act/s/61.png', 'port-act/s/62.png']
+  },
 ];

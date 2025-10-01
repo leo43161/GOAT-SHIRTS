@@ -9,7 +9,7 @@ interface YearSectionProps {
 
 const YearSection = ({ yearData }: YearSectionProps) => {
   return (
-    <section id={String(yearData.year)} className="w-full mx-auto">
+    <section id={String(yearData.year)} className="w-full mx-auto z-10">
       {/* Portada de Año */}
       <div className="text-white mb-8 border-gold shadow-lg relative min-[423px]:h-[750px] h-[700px] overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/80 z-[-1]" />
@@ -19,10 +19,10 @@ const YearSection = ({ yearData }: YearSectionProps) => {
           layout="fill"
           objectFit="cover"
           quality={90}
-          className="z-[-2]" // Por debajo del overlay
+          className="z-[0]" // Por debajo del overlay
         />
-        <div className="flex flex-col  justify-between items-center text-center h-full py-5">
-          <div>
+        <div className="flex flex-col  justify-between items-center text-center h-full py-5 z-[1]">
+          <div className='z-[0]'>
             <p className="min-[400px]:text-[2em] text-[1.2em] text-nowrap font-semibold b-0 text-shadow-md">SELECCION ARGENTINA</p>
             <h2 className="min-[400px]:text-[15em]/50 text-[12em]/50 text-white tracking-wide w-full font-black pb-4 text-shadow-lg year-text">{yearData.year}</h2>
           </div>
@@ -33,7 +33,7 @@ const YearSection = ({ yearData }: YearSectionProps) => {
               layout="fill"
               objectFit="cover"
               quality={90}
-              className="z-[0] scale-[1.011]" // Por debajo del overlay
+              className="z-[10] scale-[1.011]" // Por debajo del overlay
             />
           </div>
           <div className='w-full flex justify-center flex-col '>

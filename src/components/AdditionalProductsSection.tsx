@@ -6,7 +6,7 @@ import { additionalProducts } from '../lib/products';
 
 const AdditionalProductsSection = () => {
   return (
-    <section className="w-full bg-dark-primary py-16 px-4">
+    <section className="w-full bg-dark-primary py-16 px-2">
       <div className="container mx-auto">
         {/* Título de la sección */}
         <div className="text-center mb-12">
