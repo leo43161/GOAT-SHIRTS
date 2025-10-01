@@ -24,7 +24,7 @@ const YearSection = ({ yearData }: YearSectionProps) => {
         <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left h-full py-5">
           <div>
             <p className="text-[2em] text-nowrap font-semibold b-0 text-shadow-md">SELECCION ARGENTINA</p>
-            <h2 className="text-[8.5em]/30 text-white tracking-wide w-full font-black pb-4 text-shadow-lg">{yearData.year}</h2>
+            <h2 className="text-[15em]/50 text-white tracking-wide w-full font-black pb-4 text-shadow-lg year-text">{yearData.year}</h2>
           </div>
           <div className='w-full h-150 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
             <Image

@@ -52,7 +52,7 @@ export const yearsData: YearData[] = [
       { id: 10, name: 'SELECCION ARGENTINA 2022', year: 2022, variant: 'SUPLENTE', version: 'VERSIÓN NACIONAL', image: 'placeholder.svg' },
     ],
   },
-  {
+/*   {
     year: 2024,
     player: 'Lionel Messi',
     cover: {
@@ -77,5 +77,5 @@ export const yearsData: YearData[] = [
       { id: 15, name: 'EDICIÓN ESPECIAL 50 AÑOS', year: 2025, variant: 'TITULAR', version: 'VERSIÓN JUGADOR', details: ['Parches y números personalizados'], image: 'placeholder.svg' },
       { id: 16, name: 'EDICIÓN ESPECIAL 50 AÑOS', year: 2025, variant: 'TITULAR', version: 'VERSIÓN NACIONAL', details: ['Parches y números personalizados'], image: 'placeholder.svg' },
     ],
-  },
+  }, */
 ];
