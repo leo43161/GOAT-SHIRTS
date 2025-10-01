@@ -21,7 +21,7 @@ const Hero = () => {
 
             {/* Contenido del Hero */}
             <div className="container mx-auto px-4 text-center z-10 flex flex-col justify-center items-center h-full pt-20 pb-10"> {/* Añadido pt-20 para dejar espacio al header */}
-                <h2 className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
+                <h2 className="min-[400px]:text-5xl text-4xl md:text-7xl font-extrabold tracking-tight mb-6 leading-tight">
                     BIENVENIDOS
                 </h2>
                 <h3 className="text-xl md:text-2xl text-white mb-6 font-bold max-w-2xl mx-auto">

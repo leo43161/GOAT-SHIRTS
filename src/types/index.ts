@@ -14,6 +14,7 @@ export interface YearData {
   player: string;
   cover: {
     title: string;
+    img: string;
     matchInfo: string;
   };
   products: Product[];
