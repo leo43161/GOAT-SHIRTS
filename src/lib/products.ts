@@ -112,7 +112,7 @@ export const yearsData: YearData[] = [
     },
     products: [
       { id: 23, name: 'SELECCION BRASIL 2002', year: 2002, variant: 'TITULAR', version: 'VERSIÓN RETRO', images: ['br-02/t/29.png', 'br-02/t/30.png'] },
-      { id: 24, name: 'SELECCION BRASIL 2002', year: 2002, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', images: ['br-02/s/31.png', 'br-02/s/32.png'] },
+      { id: 24, name: 'SELEccion brasil 2002', year: 2002, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', images: ['br-02/s/31.png', 'br-02/s/32.png'] },
     ],
   },
   {
@@ -398,4 +398,194 @@ export const additionalProducts: Product[] = [
     details: ['Última colección', 'Diseño moderno'],
     images: ['port-act/s/61.png', 'port-act/s/62.png']
   },
+];
+
+export const camisetasActuales: Product[] = [
+  {
+    id: 121,
+    name: 'BOCA JUNIORS ACTUAL',
+    year: 2024,
+    variant: 'TITULAR HINCHA',
+    details: ['Última colección', 'Versión hincha, nacional y jugador'],
+    images: ['boca/th.png']
+  },
+  {
+    id: 122,
+    name: 'BOCA JUNIORS ACTUAL',
+    year: 2024,
+    variant: 'SUPLENTE HINCHA',
+    details: ['Última colección', 'Versión hincha, nacional y jugador'],
+    images: ['boca/sh.png']
+  },
+  {
+    id: 123,
+    name: 'FC BARCELONA ACTUAL',
+    year: 2024,
+    variant: 'TITULAR',
+    details: ['Última colección', 'Diseño oficial'],
+    images: ['barcelona/t.png']
+  },
+  {
+    id: 124,
+    name: 'FC BARCELONA ACTUAL',
+    year: 2024,
+    variant: 'HOMENAJE KOBE BRYANT',
+    details: ['Edición especial', 'Homenaje a la leyenda'],
+    images: ['barcelona/hom.png']
+  },
+  {
+    id: 125,
+    name: 'FC BARCELONA ACTUAL',
+    year: 2024,
+    variant: 'TERCERA EQUIPACIÓN',
+    details: ['Total 90', 'Diseño alternativo'],
+    images: ['barcelona/te.png']
+  },
+  {
+    id: 126,
+    name: 'CHELSEA FC ACTUAL',
+    year: 2024,
+    variant: 'TITULAR HINCHA',
+    details: ['Última colección', 'Versión hincha'],
+    images: ['chelsea/th.png']
+  },
+  {
+    id: 127,
+    name: 'CHELSEA FC ACTUAL',
+    year: 2024,
+    variant: 'SUPLENTE HINCHA',
+    details: ['Última colección', 'Versión hincha'],
+    images: ['chelsea/sh.png']
+  },
+  {
+    id: 128,
+    name: 'CHELSEA FC ACTUAL',
+    year: 2024,
+    variant: 'TERCERA EQUIPACIÓN HINCHA',
+    details: ['Última colección', 'Versión hincha'],
+    images: ['chelsea/teh.png']
+  },
+  {
+    id: 129,
+    name: 'CORINTHIANS ACTUAL',
+    year: 2024,
+    variant: 'TITULAR HINCHA',
+    details: ['Última colección', 'Versión hincha'],
+    images: ['corinthians/th.png']
+  },
+  {
+    id: 130,
+    name: 'REAL MADRID ACTUAL',
+    year: 2024,
+    variant: 'TITULAR HINCHA',
+    details: ['Última colección', 'Versión hincha o jugador'],
+    images: ['real/th.png']
+  },
+  {
+    id: 131,
+    name: 'REAL MADRID ACTUAL',
+    year: 2024,
+    variant: 'SUPLENTE HINCHA',
+    details: ['Última colección', 'Versión hincha o jugador'],
+    images: ['real/sh.png']
+  },
+  {
+    id: 132,
+    name: 'LIVERPOOL FC ACTUAL',
+    year: 2024,
+    variant: 'TITULAR HINCHA',
+    details: ['Última colección', 'Versión hincha'],
+    images: ['liverpool/th.png']
+  },
+  {
+    id: 133,
+    name: 'PARIS SAINT-GERMAIN ACTUAL',
+    year: 2024,
+    variant: 'TITULAR HINCHA',
+    details: ['Última colección', 'Versión hincha', 'Vista frontal y posterior'],
+    images: ['psg/th-frente.png', 'psg/th-atras.png']
+  },
+  {
+    id: 134,
+    name: 'RIVER PLATE ACTUAL',
+    year: 2024,
+    variant: 'TITULAR NACIONAL',
+    details: ['Última colección', 'Versión nacional, hincha y jugador'],
+    images: ['river/tn.png']
+  },
+  {
+    id: 135,
+    name: 'RIVER PLATE ACTUAL',
+    year: 2024,
+    variant: 'SUPLENTE NACIONAL',
+    details: ['Última colección', 'Versión nacional, hincha y jugador'],
+    images: ['river/sn.png']
+  }
+];
+
+export const retroProducts: Product[] = [
+  {
+    id: 136,
+    name: 'ARSENAL 2005',
+    year: 2005,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['arsenal-2005/frente.png', 'arsenal-2005/atras.png']
+  },
+  {
+    id: 137,
+    name: 'CHELSEA 2013',
+    year: 2013,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['chelsea-2013/frente.png', 'chelsea-2013/atras.png']
+  },
+  {
+    id: 138,
+    name: 'FIORENTINA 1998',
+    year: 1998,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['fiorentina-1998/frente.png', 'fiorentina-1998/atras.png']
+  },
+  {
+    id: 139,
+    name: 'INTER 1997',
+    year: 1997,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['inter-1997/frente.png', 'inter-1997/atras.png']
+  },
+  {
+    id: 140,
+    name: 'MANCHESTER UNITED 2007',
+    year: 2007,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['manchester-2007/frente.png', 'manchester-2007/atras.png']
+  },
+  {
+    id: 141,
+    name: 'MANCHESTER CITY 2013',
+    year: 2013,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['mancity-2013/frente.png', 'mancity-2013/atras.png']
+  },
+  {
+    id: 142,
+    name: 'AC MILAN 2007',
+    year: 2007,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['milan-2007/frente.png', 'milan-2007/atras.png']
+  },
+  {
+    id: 143,
+    name: 'AC MILAN 2008',
+    year: 2008,
+    variant: 'TITULAR',
+    details: ['Camiseta Retro', 'Diseño Clásico'],
+    images: ['milan-2008/frente.png', 'milan-2008/atras.png']
+  }
 ];

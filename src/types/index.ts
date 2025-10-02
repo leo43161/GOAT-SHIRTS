@@ -3,7 +3,7 @@ export interface Product {
   id: number;
   name: string;
   year: number;
-  variant: 'TITULAR' | 'SUPLENTE';
+  variant: string;
   version?: 'VERSIÓN JUGADOR' | 'VERSIÓN NACIONAL' | 'VERSIÓN RETRO' | 'ACTUAL' | 'VERSIÓN HINCHA';
   details?: string[];
   images?: string[]; // Placeholder for now
