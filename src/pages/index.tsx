@@ -10,7 +10,7 @@ export default function HomePage() {
     <>
       <Hero />
       <ShirtTypesSection />
-      <div className="space-y-8 bg-black">
+      <div className="bg-black">
         {yearsData.map((yearData) => (
           <YearSection key={yearData.year} yearData={yearData} />
         ))}

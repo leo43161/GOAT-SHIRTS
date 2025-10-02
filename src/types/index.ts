@@ -4,7 +4,7 @@ export interface Product {
   name: string;
   year: number;
   variant: 'TITULAR' | 'SUPLENTE';
-  version?: 'VERSIÓN JUGADOR' | 'VERSIÓN NACIONAL';
+  version?: 'VERSIÓN JUGADOR' | 'VERSIÓN NACIONAL' | 'VERSIÓN RETRO' | 'ACTUAL' | 'VERSIÓN HINCHA';
   details?: string[];
   images?: string[]; // Placeholder for now
 }
@@ -12,6 +12,7 @@ export interface Product {
 export interface YearData {
   year: number;
   player: string;
+  seleccion: string;
   cover: {
     title: string;
     img: string;

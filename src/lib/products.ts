@@ -5,6 +5,7 @@ export const yearsData: YearData[] = [
   {
     year: 1986,
     player: 'Diego Armando Maradona',
+    seleccion: "SELECCION ARGENTINA",
     cover: {
       img: "4.png",
       title: 'México 1986',
@@ -18,6 +19,7 @@ export const yearsData: YearData[] = [
   {
     year: 1994,
     player: 'Diego Armando Maradona',
+    seleccion: "SELECCION ARGENTINA",
     cover: {
       img: "8.png",
       title: 'USA 1994',
@@ -31,6 +33,7 @@ export const yearsData: YearData[] = [
   {
     year: 2006,
     player: 'Lionel Messi',
+    seleccion: "SELECCION ARGENTINA",
     cover: {
       img: "17.png",
       title: 'Alemania 2006',
@@ -44,6 +47,7 @@ export const yearsData: YearData[] = [
   {
     year: 2022,
     player: 'Lionel Messi',
+    seleccion: "SELECCION ARGENTINA",
     cover: {
       img: "21.png",
       title: 'Qatar 2022',
@@ -57,6 +61,7 @@ export const yearsData: YearData[] = [
   {
     year: 2024,
     player: 'Lionel Messi',
+    seleccion: "SELECCION ARGENTINA",
     cover: {
     img: "25.png",
       title: 'Copa América 2024',
@@ -67,7 +72,151 @@ export const yearsData: YearData[] = [
       { id: 10, name: 'SELECCION ARGENTINA 2024', year: 2024, variant: 'SUPLENTE', version: 'VERSIÓN JUGADOR', details: ['Parche Campeón del Mundo', 'Parche Copa América'], images: ['arg-24/s/21.png', 'arg-24/s/22.png'] },
     ],
   },
+  {
+    year: 2025,
+    player: 'Alexis Mac Allister',
+    seleccion: "SELECCION ARGENTINA",
+    cover: {
+      img: "30.png",
+      title: 'Eliminatorias USA 2026',
+      matchInfo: 'Fecha 14: Argentina 4 - Brasil 1',
+    },
+    products: [
+      { id: 19, name: 'EDICIÓN ESPECIAL 50 AÑOS', year: 2025, variant: 'TITULAR', version: 'VERSIÓN JUGADOR', details: ['Parches y números personalizados'], images: ['arg-esp/23.png', 'arg-esp/24.png'] },
+      { id: 20, name: 'EDICIÓN ESPECIAL 50 AÑOS', year: 2025, variant: 'TITULAR', version: 'VERSIÓN NACIONAL', details: ['Parches y números personalizados'], images: ['arg-esp/23.png', 'arg-esp/24.png'] },
+    ],
+  },
+  // BRASIL
+  {
+    year: 1998,
+    player: 'Ronaldo Nazario',
+    seleccion: "SELECCION BRASIL",
+    cover: {
+      img: "34.png",
+      title: 'Mundial de Francia 1998',
+      matchInfo: 'Octavos de Final: Brasil 4 - Chile 1',
+    },
+    products: [
+      { id: 21, name: 'SELECCION BRASIL 1998', year: 1998, variant: 'TITULAR', version: 'VERSIÓN RETRO', details: ['Mundial Corea/Japón 2002'], images: ['br-88/t/25.png', 'br-88/t/26.png'] },
+      { id: 22, name: 'SELECCION BRASIL 1998', year: 1998, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', details: ['Mundial Corea/Japón 2002'], images: ['br-88/s/27.png', 'br-88/s/28.png'] },
+    ],
+  },
+  {
+    year: 2002,
+    player: 'Ronaldo Nazario',
+    seleccion: "SELECCION BRASIL",
+    cover: {
+      img: "25.png",
+      title: 'Mundial Corea - Japón 2002',
+      matchInfo: 'Semi Final: Brasil 1 - Turquía 0',
+    },
+    products: [
+      { id: 23, name: 'SELECCION BRASIL 2002', year: 2002, variant: 'TITULAR', version: 'VERSIÓN RETRO', images: ['br-02/t/29.png', 'br-02/t/30.png'] },
+      { id: 24, name: 'SELECCION BRASIL 2002', year: 2002, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', images: ['br-02/s/31.png', 'br-02/s/32.png'] },
+    ],
+  },
+  {
+    year: 2006,
+    player: 'Ronaldinho Gaucho',
+    seleccion: "SELECCION BRASIL",
+    cover: {
+      img: "38.png",
+      title: 'Mundial Alemania 2006',
+      matchInfo: 'Octavos de Final: Brasil 3 - Ghana 0',
+    },
+    products: [
+      { id: 25, name: 'SELECCION BRASIL 2006', year: 2006, variant: 'TITULAR', version: 'VERSIÓN RETRO', images: ['br-06/t/33.png', 'br-06/t/34.png'] },
+      { id: 26, name: 'SELECCION BRASIL 2006', year: 2006, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', images: ['br-06/s/35.png', 'br-06/s/36.png'] },
+    ],
+  },
+  {
+    year: 2024,
+    player: 'Vinicius Junior',
+    seleccion: "SELECCION BRASIL",
+    cover: {
+      img: "46.png",
+      title: 'Copa América Estados Unidos 2024',
+      matchInfo: 'Brasil 4 - Paraguay 1',
+    },
+    products: [
+      { id: 27, name: 'SELECCION BRASIL 2024', year: 2024, variant: 'TITULAR', version: 'ACTUAL', images: ['br-25/t/37.png', 'br-25/t/38.png'] },
+      { id: 28, name: 'SELECCION BRASIL 2024', year: 2024, variant: 'SUPLENTE', version: 'ACTUAL', images: ['br-25/s/39.png', 'br-25/s/40.png'] },
+    ],
+  },
+  // FRANCIA
+  {
+    year: 1998,
+    player: 'Zinedine Zidane',
+    seleccion: "SELECCION FRANCIA",
+    cover: {
+      img: "50.png",
+      title: 'Mundial de Francia 1998',
+      matchInfo: 'Final: Francia 2 - Brasil 0',
+    },
+    products: [
+      { id: 29, name: 'SELECCION FRANCIA 1998', year: 1998, variant: 'TITULAR', version: 'VERSIÓN RETRO', images: ['fr-98/t/41.png', 'fr-98/t/42.png'] },
+      { id: 30, name: 'SELECCION FRANCIA 1998', year: 1998, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', images: ['fr-98/s/43.png', 'fr-98/s/44.png'] },
+    ],
+  },
+  {
+    year: 2006,
+    player: 'Zinedine Zidane',
+    seleccion: "SELECCION FRANCIA",
+    cover: {
+      img: "54.png",
+      title: 'Mundial Alemania 2006',
+      matchInfo: 'Cuartos de Final: Francia 1 - Brasil 0',
+    },
+    products: [
+      { id: 31, name: 'SELECCION FRANCIA 2006', year: 2006, variant: 'TITULAR', version: 'VERSIÓN RETRO', images: ['fr-06/t/45.png', 'fr-06/t/46.png'] },
+      { id: 32, name: 'SELECCION FRANCIA 2006', year: 2006, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', images: ['fr-06/s/47.png', 'fr-06/s/48.png'] },
+    ],
+  },
+  {
+    year: 2025,
+    player: 'Kylian Mbappé',
+    seleccion: "SELECCION FRANCIA",
+    cover: {
+      img: "58.png",
+      title: 'UEFA National League 2025',
+      matchInfo: 'Partido por el tercer puesto: Francia 2 - Alemania 0',
+    },
+    products: [
+      { id: 33, name: 'SELECCION FRANCIA 2025', year: 2025, variant: 'TITULAR', version: 'VERSIÓN HINCHA', images: ['fr-act/t/51.png', 'fr-act/t/52.png'] },
+      { id: 34, name: 'SELECCION FRANCIA 2025', year: 2025, variant: 'SUPLENTE', version: 'VERSIÓN HINCHA', images: ['fr-act/s/53.png', 'fr-act/s/54.png'] },
+    ],
+  },
+  // PORTUGAL
+  {
+    year: 2006,
+    player: 'Cristiano Ronaldo',
+    seleccion: "SELECCION PORTUGAL",
+    cover: {
+      img: "62.png",
+      title: 'Mundial de Alemania 2006',
+      matchInfo: 'Cuartos de Final: Portugal 0 - Inglaterra 0 (3 - 1 p)',
+    },
+    products: [
+      { id: 35, name: 'SELECCION PORTUGAL 2006', year: 2006, variant: 'TITULAR', version: 'VERSIÓN RETRO', images: ['port-06/t/55.png', 'port-06/t/56.png'] },
+      { id: 36, name: 'SELECCION PORTUGAL 2006', year: 2006, variant: 'SUPLENTE', version: 'VERSIÓN RETRO', images: ['port-06/s/57.png', 'port-06/s/58.png'] },
+    ],
+  },
+  {
+    year: 2025,
+    player: 'Cristiano Ronaldo',
+    seleccion: "SELECCION PORTUGAL",
+    cover: {
+      img: "65.png",
+      title: 'UEFA Nacional League',
+      matchInfo: 'Final: Portugal 2 - España 2 (5-3 P.)',
+    },
+    products: [
+      { id: 37, name: 'SELECCION PORTUGAL 2025', year: 2025, variant: 'TITULAR', version: 'VERSIÓN HINCHA', images: ['port-act/t/59.png', 'port-act/t/60.png'] },
+      { id: 38, name: 'SELECCION PORTUGAL 2025', year: 2025, variant: 'SUPLENTE', version: 'VERSIÓN HINCHA', images: ['port-act/s/61.png', 'port-act/s/62.png'] },
+    ],
+  },
 ];
+
 
 export const additionalProducts: Product[] = [
   // Argentina 1990 (Italia 90)

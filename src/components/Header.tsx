@@ -4,6 +4,7 @@
 import { ShoppingCart } from 'lucide-react';
 import { useCartStore } from '../hooks/useCartStore';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 const Header = () => {
   const { toggleCart, getTotalItems } = useCartStore();
@@ -21,9 +22,13 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="w-1/3"></div> {/* Espacio para centrar el logo */}
         <div className="w-1/3 text-center">
-          <h1 className="text-2xl md:text-3xl font-bold text-white tracking-wider">
-            GOAT<span className="text-gold">STORE</span>
-          </h1>
+          <Image
+            src="/img/logo.png" // Asegúrate de que la ruta sea correcta y la imagen esté en /public/img          
+            alt="Logo The Goat Store"
+            width={80}
+            height={50}
+            className="mx-auto"
+          />
         </div>
         <div className="w-1/3 flex justify-end">
           <button onClick={toggleCart} className="relative text-white hover:text-gold transition-colors">
