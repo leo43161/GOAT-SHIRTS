@@ -106,7 +106,7 @@ export const yearsData: YearData[] = [
     player: 'Ronaldo Nazario',
     seleccion: "SELECCION BRASIL",
     cover: {
-      img: "25.png",
+      img: "38.png",
       title: 'Mundial Corea - Japón 2002',
       matchInfo: 'Semi Final: Brasil 1 - Turquía 0',
     },
@@ -120,7 +120,7 @@ export const yearsData: YearData[] = [
     player: 'Ronaldinho Gaucho',
     seleccion: "SELECCION BRASIL",
     cover: {
-      img: "38.png",
+      img: "31.png",
       title: 'Mundial Alemania 2006',
       matchInfo: 'Octavos de Final: Brasil 3 - Ghana 0',
     },
