@@ -9,9 +9,10 @@ import { useCartStore } from '../hooks/useCartStore';
 
 interface ProductCardProps {
   product: Product;
+  pathFolder?: string;
 }
 
-const ProductCard = ({ product }: ProductCardProps) => {
+const ProductCard = ({ product, pathFolder }: ProductCardProps) => {
   const { addItem } = useCartStore();
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -29,7 +30,8 @@ const ProductCard = ({ product }: ProductCardProps) => {
       setCurrentImageIndex((prev) => (prev - 1 + totalImages) % totalImages);
     }
   };
-
+console.log(product.name)
+console.log(`${pathFolder || '/img/camisetas/'}`)
   return (
     <div className="bg-dark-secondary rounded-lg overflow-hidden flex flex-col justify-between transition-transform duration-300 hover:scale-105 hover:border-gold">
       {/* Sección de imagen/galería */}
@@ -38,7 +40,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
           <>
             <div className="relative w-full h-full p-4">
               <Image
-                src={`/img/camisetas/${product.images[currentImageIndex]}`}
+                src={`${pathFolder || '/img/camisetas/'}${product.images[currentImageIndex]}`}
                 alt={`${product.name} - imagen ${currentImageIndex + 1}`}
                 layout="fill"
                 objectFit="contain"

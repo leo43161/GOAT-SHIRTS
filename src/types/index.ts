@@ -10,7 +10,7 @@ export interface Product {
 }
 
 export interface YearData {
-  year: number;
+  year: number | string;
   player: string;
   seleccion: string;
   cover: {
