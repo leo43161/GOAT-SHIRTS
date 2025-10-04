@@ -7,10 +7,12 @@ import AdditionalProductsSection from '@/components/AdditionalProductsSection';
 import { yearsData } from '@/lib/products';
 import ProductsActuales from '@/components/ProductosActuales';
 import ProductsRetro from '@/components/ProductsRetro';
+import SEOHead from '@/components/SEOHead';
 
 export default function HomePage() {
   return (
     <>
+    <SEOHead />
       <Hero />
       {/* Banner informativo sobre cómo usar el carrito */}
       <InfoBanner />
