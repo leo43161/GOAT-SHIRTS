@@ -43,11 +43,11 @@ export const trackWhatsAppConversion = async (cartItems: any[]) => {
     const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyy7voWGvLqWEk_l7n7HHiaR4rJUf4r0oupB037Hb2dhvEZEndbaab-1zkuRWvxcPfb/exec';
     
     // Verificar que la URL esté configurada
-    if (GOOGLE_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyy7voWGvLqWEk_l7n7HHiaR4rJUf4r0oupB037Hb2dhvEZEndbaab-1zkuRWvxcPfb/exec') {
+    /* if (GOOGLE_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyy7voWGvLqWEk_l7n7HHiaR4rJUf4r0oupB037Hb2dhvEZEndbaab-1zkuRWvxcPfb/exec') {
       console.warn('⚠️ Google Apps Script URL no configurada. No se registrará la conversión.');
       console.warn('📝 Seguí las instrucciones en la guía para configurar analytics.');
       return;
-    }
+    } */
 
     // Enviar los datos a Google Sheets
     await fetch(GOOGLE_SCRIPT_URL, {
