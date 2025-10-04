@@ -1,16 +1,20 @@
-// /app/components/Cart.tsx
 "use client";
 
 import { useCartStore } from '../hooks/useCartStore';
 import { AnimatePresence, motion } from 'framer-motion';
 import { X, Trash2, ShoppingCart, Send } from 'lucide-react';
 import { generateOrderMessage, getOrderWhatsAppLink } from '../lib/whatsapp';
+import { trackWhatsAppConversion } from '../lib/analytics';
 
 const Cart = () => {
   const { isOpen, toggleCart, items, removeItem } = useCartStore();
 
-  const handleCheckout = () => {
+  const handleCheckout = async () => {
     if (items.length === 0) return;
+    
+    // 🔥 REGISTRAR CONVERSIÓN (de TODOS los clientes)
+    await trackWhatsAppConversion(items);
+    
     const message = generateOrderMessage(items);
     const link = getOrderWhatsAppLink(message);
     window.open(link, '_blank');
@@ -20,7 +24,6 @@ const Cart = () => {
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* Overlay */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -29,7 +32,6 @@ const Cart = () => {
             className="fixed inset-0 bg-black z-50"
           />
 
-          {/* Sidebar */}
           <motion.div
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
