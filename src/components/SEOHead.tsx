@@ -11,7 +11,7 @@ interface SEOHeadProps {
 const SEOHead = ({ 
   title = "The Goat Store - Camisetas de Fútbol Retro y Actuales",
   description = "Comprá las mejores camisetas de fútbol de Argentina, Brasil, Francia y más. Ediciones especiales, retro y actuales. Pedí por WhatsApp y recibilo en tu casa.",
-  image = "/img/logo.png",
+  image = "/img/og-image.png",
   url = "https://thegoatstore.com"
 }: SEOHeadProps) => {
   return (
