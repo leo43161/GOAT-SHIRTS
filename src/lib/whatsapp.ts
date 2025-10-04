@@ -1,7 +1,7 @@
 // /app/lib/whatsapp.ts
 import { CartItem } from '../types';
 
-const VENDOR_PHONE_NUMBER = '+5493812137178'; // Reemplazar con el número real
+const VENDOR_PHONE_NUMBER = '+5493813547306'; // Reemplazar con el número real
 const DEV_PHONE_NUMBER = '+5493816162181'; // Reemplazar con tu número de contacto
 
 export const generateOrderMessage = (cartItems: CartItem[]): string => {

@@ -1,28 +1,57 @@
 // /app/components/FloatingCTA.tsx
 "use client";
 
-import { useState } from 'react';
-import { Code, MessageSquare, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Code, MessageSquare, X, ShoppingCart } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { getContactWhatsAppLink } from '../lib/whatsapp';
+import { useCartStore } from '@/hooks/useCartStore';
 
 const FloatingCTA = () => {
+  const { toggleCart, getTotalItems } = useCartStore();
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const [isClient, setIsClient] = useState(false);
+
+  // Evita hydration mismatch para el contador del carrito
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   const handleContact = () => {
     const link = getContactWhatsAppLink();
     window.open(link, '_blank');
   };
-
+  const handleCloseCart = () => {
+    // Cerramos usando toggleCart, el useEffect se encarga del historial
+    toggleCart();
+  };
+  const totalItems = isClient ? getTotalItems() : 0;
   return (
     <>
-      <div className="fixed bottom-6 right-6 z-40 group">
+      <div className="fixed bottom-24 right-6 z-40 group">
         <button
           onClick={() => setIsModalOpen(true)}
           className="bg-gold text-black rounded-full p-4 shadow-lg hover:scale-110 transition-transform"
         >
           <Code size={28} />
         </button>
+        <div className="absolute bottom-full right-0 mb-2 hidden group-hover:block bg-black text-white text-sm rounded-md px-3 py-1 whitespace-nowrap">
+          ¿Necesitás tu propia web?
+        </div>
+      </div>
+      <div className="fixed bottom-6 right-6 z-40 group">
+        <button
+          onClick={() => handleCloseCart()}
+          className="bg-gold text-black rounded-full p-4 shadow-lg hover:scale-110 transition-transform"
+        >
+          <ShoppingCart size={28} />
+        </button>
+        {totalItems > 0 && (
+          <span className="absolute -top-2.5 -right-2 bg-black border border-black text-gold text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center">
+            {totalItems}
+          </span>
+        )}
         <div className="absolute bottom-full right-0 mb-2 hidden group-hover:block bg-black text-white text-sm rounded-md px-3 py-1 whitespace-nowrap">
           ¿Necesitás tu propia web?
         </div>
