@@ -40,10 +40,10 @@ export const trackWhatsAppConversion = async (cartItems: any[]) => {
     // 🔥 REEMPLAZÁ ESTA URL CON LA QUE TE DÉ GOOGLE APPS SCRIPT
     // Después de implementar el script, vas a tener una URL como:
     // https://script.google.com/macros/s/AKfycbz...../exec
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyy7voWGvLqWEk_l7n7HHiaR4rJUf4r0oupB037Hb2dhvEZEndbaab-1zkuRWvxcPfb/exec';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw56tyuJxZRwrEzc2s_4lXnijNZ4PZzO5DI-6buN4PWu9XxKDGs-HSJEItenKRI1Uwx/exec';
     
     // Verificar que la URL esté configurada
-    /* if (GOOGLE_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyy7voWGvLqWEk_l7n7HHiaR4rJUf4r0oupB037Hb2dhvEZEndbaab-1zkuRWvxcPfb/exec') {
+    /* if (GOOGLE_SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbw56tyuJxZRwrEzc2s_4lXnijNZ4PZzO5DI-6buN4PWu9XxKDGs-HSJEItenKRI1Uwx/exec') {
       console.warn('⚠️ Google Apps Script URL no configurada. No se registrará la conversión.');
       console.warn('📝 Seguí las instrucciones en la guía para configurar analytics.');
       return;
@@ -83,9 +83,9 @@ export const trackProductView = async (productName: string, productYear: number)
     };
 
     // Usá la misma URL del script (o creá otro endpoint si querés separar los datos)
-    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyy7voWGvLqWEk_l7n7HHiaR4rJUf4r0oupB037Hb2dhvEZEndbaab-1zkuRWvxcPfb/exec';
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw56tyuJxZRwrEzc2s_4lXnijNZ4PZzO5DI-6buN4PWu9XxKDGs-HSJEItenKRI1Uwx/exec';
     
-    if (GOOGLE_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbyy7voWGvLqWEk_l7n7HHiaR4rJUf4r0oupB037Hb2dhvEZEndbaab-1zkuRWvxcPfb/exec') {
+    if (GOOGLE_SCRIPT_URL !== 'https://script.google.com/macros/s/AKfycbw56tyuJxZRwrEzc2s_4lXnijNZ4PZzO5DI-6buN4PWu9XxKDGs-HSJEItenKRI1Uwx/exec') {
       await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
