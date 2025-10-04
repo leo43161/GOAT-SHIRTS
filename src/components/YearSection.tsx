@@ -40,10 +40,10 @@ const YearSection = ({ yearData, classNameProducts, pathFolder }: YearSectionPro
             />
           </div>
           <div className='w-full flex justify-center flex-col '>
-            <div className="mt-4 z-[1] text-center px-4 w-full mb-3">
-              <p className="text-3xl font-bold text-shadow-md">{yearData.player}</p>
-              <h3 className="text-xl font-semibold underline mb-2">{yearData.cover.title}</h3>
-              <p className="text-md text-white">{yearData.cover.matchInfo}</p>
+            <div className="mt-4 z-[1] text-right px-6 w-full mb-6">
+              <p className="text-3xl font-bold text-shadow-md year-text">{yearData.player}</p>
+              <h3 className="text-xl font-semibold underline mb-2 year-text">{yearData.cover.title}</h3>
+              <p className="text-md text-white year-text">{yearData.cover.matchInfo}</p>
             </div>
             <div className='z-[2]'>
               <Image
