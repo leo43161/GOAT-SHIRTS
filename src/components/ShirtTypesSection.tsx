@@ -10,25 +10,28 @@ const ShirtTypesSection = () => {
       id: 1,
       title: 'VERSION NACIONAL',
       subtitle: 'ESCUDO Y LOGOS BORDADOS SPONSOR SUBLIMADOS',
-      icon: <Shirt size={80} className="text-white" />
+      // MODIFICADO: Tamaño del ícono reducido
+      icon: <Shirt size={48} className="text-white" />
     },
     {
       id: 2,
       title: 'VERSION HINCHA',
       subtitle: 'ESCUDO Y LOGOS TERMOSELLADOS CALIDAD PREMIUM EN TELA',
-      icon: <Shirt size={80} className="text-white" />
+      // MODIFICADO: Tamaño del ícono reducido
+      icon: <Shirt size={48} className="text-white" />
     },
     {
       id: 3,
       title: 'VERSION JUGADOR',
       subtitle: 'ESCUDO Y LOGOS TERMOSELLADOS DETALLES DE LA TELA CON MICROPERFORACIONES LA MEJOR TELA ACTUALMENTE EN EL MERCADO',
-      icon: <Shirt size={80} className="text-white" />
+      // MODIFICADO: Tamaño del ícono reducido
+      icon: <Shirt size={48} className="text-white" />
     }
   ];
 
   return (
-    <section className="relative w-full bg-black py-16 px-4">
-      {/* Imagen de fondo con overlay */}
+    // MODIFICADO: Padding vertical general reducido
+    <section className="relative w-full bg-black py-8 px-4">
       <div className="absolute inset-0 z-0">
         <Image
           src="/img/img25.jpg"
@@ -42,30 +45,36 @@ const ShirtTypesSection = () => {
       </div>
 
       <div className="container mx-auto relative z-10">
-        {/* Título principal */}
-        <div className="text-center mb-12">
-          <h2 className="text-5xl md:text-7xl font-extrabold text-white mb-4 tracking-tight">
+        {/* MODIFICADO: Margen inferior del contenedor del título reducido */}
+        <div className="text-center mb-8">
+          {/* MODIFICADO: Tamaño de fuente y margen reducidos */}
+          <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-2 tracking-tight">
             TIPOS DE
           </h2>
-          <h3 className="text-5xl md:text-7xl font-extrabold text-gold mb-6 tracking-tight">
+          {/* MODIFICADO: Tamaño de fuente y margen reducidos */}
+          <h3 className="text-3xl md:text-5xl font-extrabold text-gold mb-4 tracking-tight">
             CAMISETAS
           </h3>
-          <p className="text-white text-xl md:text-2xl font-semibold">
+          {/* MODIFICADO: Tamaño de fuente reducido */}
+          <p className="text-white text-base md:text-lg font-semibold">
             TENELOS EN CUENTA ANTES DE HACER TU PEDIDO
           </p>
         </div>
 
-        {/* Grid de tipos de camisetas */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto mt-16">
+        {/* MODIFICADO: Margen superior y gap entre tarjetas reducidos */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto mt-10">
           {shirtTypes.map((type) => (
             <div 
               key={type.id}
-              className="bg-dark-secondary border-2 border-gold rounded-lg p-8 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
+              // MODIFICADO: Padding interno de la tarjeta reducido
+              className="bg-dark-secondary border-2 border-gold rounded-lg p-6 flex flex-col items-center text-center hover:scale-105 transition-transform duration-300"
             >
-              <div className="mb-6 bg-black/50 rounded-full p-6">
+              {/* MODIFICADO: Margen y padding del círculo del ícono reducidos */}
+              <div className="mb-4 bg-black/50 rounded-full p-4">
                 {type.icon}
               </div>
-              <h4 className="text-2xl font-bold text-gold mb-4 tracking-wider">
+              {/* MODIFICADO: Tamaño de fuente y margen reducidos */}
+              <h4 className="text-xl font-bold text-gold mb-3 tracking-wider">
                 {type.title}
               </h4>
               <p className="text-white text-sm leading-relaxed">

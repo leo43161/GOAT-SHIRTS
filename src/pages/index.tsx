@@ -1,5 +1,6 @@
 // src/pages/index.tsx
 import Hero from '@/components/Hero';
+import InfoBanner from '@/components/InfoBanner';
 import ShirtTypesSection from '@/components/ShirtTypesSection';
 import YearSection from '@/components/YearSection';
 import AdditionalProductsSection from '@/components/AdditionalProductsSection';
@@ -11,6 +12,8 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      {/* Banner informativo sobre cómo usar el carrito */}
+      <InfoBanner />
       <ShirtTypesSection />
       <div className="bg-black">
         {yearsData.map((yearData) => (
