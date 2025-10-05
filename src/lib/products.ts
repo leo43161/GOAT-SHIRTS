@@ -40,8 +40,8 @@ export const yearsData: YearData[] = [
       matchInfo: 'Fase de Grupos: Argentina 6 - Serbia y Montenegro 0',
     },
     products: [
-      { id: 5, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'TITULAR', images: ['arg-06/t/11.png', 'arg-06/t/12.png'] },
-      { id: 6, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'SUPLENTE', images: ['arg-06/s/13.png', 'arg-06/s/14.png'] },
+      { id: 5, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'TITULAR', images: ['arg-06/s/11.png', 'arg-06/s/12.png'] },
+      { id: 6, name: 'SELECCION ARGENTINA 2006', year: 2006, variant: 'SUPLENTE', images: ['arg-06/t/13.png', 'arg-06/t/14.png'] },
     ],
   },
   {
